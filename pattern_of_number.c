@@ -9,13 +9,14 @@ int main()
     int a = 0;
     printf("No. of lines of stars needed\n");
     scanf("%d", &n);
+    printf("OUTPUT:\n");
     for (int i = 0; i <= n; i++)
     {
         while (i > a)
         {
             for (b = 1; b <= i; b++)
             {
-                printf("%d",b);
+                printf("%d ",b);
                 a++;
             }
         }
