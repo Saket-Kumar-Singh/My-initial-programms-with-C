@@ -26,6 +26,16 @@ int main()
         // }
         a = 0;
     }
+    for (int i = n - 1; i > 0; i--)
+        {
+            while (i > a)
+            {
+                printf("* ");
+                a++;
+            }
+            printf("\n");
+            a = 0;
+        }
 
     return 0;
 }
