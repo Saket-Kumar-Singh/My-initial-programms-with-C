@@ -9,24 +9,28 @@ int main()
     int a = 0;
     printf("No. of lines of stars needed\n");
     scanf("%d", &n);
-    for (int i = 0; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
-        while (i > a)
+        /* code */
+
+        for (int i = 0; i <= n; i++)
         {
-            printf("*");
-            a++;
-        }
-        if (i >= 1)
-        {
+            while (i > a)
+            {
+                printf("* ");
+                a++;
+            }
+            // if (i >= 1)
+            //{
             printf("\n");
+            // }
+            // while (a >= 1)
+            // {
+            //     a--;
+            // }
+            a = 0;
         }
-        // while (a >= 1)
-        // {
-        //     a--;
-        // }
-        a = 0;
-    }
-    for (int i = n - 1; i > 0; i--)
+        for (int i = n - 1; i > 0; i--)
         {
             while (i > a)
             {
@@ -36,6 +40,6 @@ int main()
             printf("\n");
             a = 0;
         }
-
+    }
     return 0;
 }
