@@ -2,55 +2,42 @@
 //#include<math.h>
 //#include<stdlib.h>
 //#include<time.h>
-// void mountain(int a);
+//void mountain();
 int main()
 {
-    int a, b, c, d, n, i;
-    // printf("No. of peaks needed");
-    // scanf("%d",&n);
+    int a, b, c, d, i, n;
+    // printf("How mangy mountain peaks you want\n");
+    // scanf("%d", &n);
     n = 3;
-    a = 1;
-    b = 0;
-    for (i = n; i > 0; i--)
+    a = b;
+    b = 1;
+    i = 0;
+    c = 0;
+    d = 0;
+    for (b; b < n; b++)
     {
-        while (b <= n)
+        while (c < n)
         {
-            while (i > a)
+            while (a < n)
             {
                 printf(" ");
                 a++;
             }
-            while (a >= i)
+            while (d < (2 * b) - 1)
             {
-                printf("*");
                 if (a == n)
                 {
-                    break;
+                    printf("*");
                 }
-                a++;
             }
-            b++;
-            a = 0;
+            while (a > 0)
+            {
+                printf(" ");
+                a--;
+            }
+            c++;
         }
-
         printf("\n");
-        b = 0;
     }
-    // mountain(n);
-
     return 0;
 }
-// void mountain(int a)
-// {
-//     int n, i;
-//     if (n == 1)
-//     {
-//         return;
-//     }
-//     mountain(n - 1);
-//     for (i = 0; i < n; i++)
-//     {
-//         printf(" ");
-//     }
-//     printf("*");
-// }
