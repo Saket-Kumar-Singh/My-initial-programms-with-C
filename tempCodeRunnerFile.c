@@ -6,15 +6,15 @@
 int main()
 {
     int a, b, c, d, i, n;
-    printf("How mangy mountain peaks you want\n");
-    scanf("%d", &n);
-    //n = 3;
+    // printf("How mangy mountain peaks you want\n");
+    // scanf("%d", &n);
+    n = 3;
     b = 1;
     a = b;
     i = 0;
     c = 0;
     d = 0;
-    for (b; b <= n; b++)
+    for (b; b < n; b++)
     {
         while (c < n)
         {
@@ -32,10 +32,10 @@ int main()
                 }
                 d++;
             }
-            while (a > b)
+            while (a > 0)
             {
                 printf(" ");
-              a-- ;
+                a--;
             }
             c++;
             d = 0;
